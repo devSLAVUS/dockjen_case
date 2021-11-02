@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'prep.sh'
+                sh 'jen_files/prep.sh'
             }
         }
         stage("Second step") {
