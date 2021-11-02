@@ -1,3 +1,2 @@
 #!/bin/bash
-
-hostname
+ssh root@ds1 'hostname'
