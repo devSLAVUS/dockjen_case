@@ -13,6 +13,7 @@ pipeline {
     stages {
         stage("First step") {
             steps {
+                sh "chmod +x -R ${env.WORKSPACE}"
                 sh 'jen_files/prep.sh'
             }
         }
