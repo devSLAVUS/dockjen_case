@@ -13,8 +13,9 @@ pipeline {
     stages {
         stage("First step") {
             steps {
+                sh "usermod -a -G docker jenkins"
                 sh "chmod +x -R ${env.WORKSPACE}"
-                sh 'jen_files/prep.sh'
+                sh "jen_files/prep.sh"
             }
         }
         stage("Second step") {
