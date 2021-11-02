@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'ssh root@ds1 \'hostname\''
+                sh 'prep.sh'
             }
         }
         stage("Second step") {
